@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <title>婚纱相册</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <script src="../javascripts/zepto.min.js"></script>
+    <script src="../javascripts/main.js"></script>
+    <script src="../javascripts/tool.js"></script>
+
+</head>
+
+<body style=" background:#adacaa;">
+<header class="ui-header">
+    <h1>婚纱相册</h1>
+    <div class="ui-header-left"><a class="ui-header-ico-home" href="../index.html"></a></div>
+</header>
+
+<div class="catpic"><img src="../images/10.png" width="100%"></div>
+<div class="amain">
+    <div class="filter"></div>
+    <h2 class="catname"><i class="fa fa-camera"></i>婚纱相册</h2>
+    <h3 class="tle">张子良&畅晓春</h3>
+    <div class="cont"><p class="MsoNormal" style="text-align:center;" align="center">
+        <br />
+    </p>
+        <ul class="index_img"  id="grid">
+            <li><a href="https://pan.baidu.com/s/1hsOarKo"><img src="" alt="向春晓同学索取密码并点击" /></a></li>
+        </ul>
+        <p>
+            <br />
+        </p>    </div>
+</div>
+
+
+<script type="text/javascript" src="../javascripts/ysjz/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="../javascripts/ysjz/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../javascripts/ysjz/classie.js"></script>
+<script type="text/javascript" src="../javascripts/ysjz/colorfinder-1.1.js"></script>
+<script type="text/javascript" src="../javascripts/ysjz/gridScrollFx.js"></script>
+<script>
+    new GridScrollFx( document.getElementById( 'grid' ), {
+        viewportFactor : 0.4
+    } );
+</script>
+
+<footer>
+    <div class="copy tc">张子良&畅晓春的结婚邀请函</div>
+</footer>
+<script>
+    $(function() {
+        var obj = new Image();
+        $(".cont").find("img").each(function(i, n) {
+            var ImgObj = new Image(); //判断图片是否存在
+            ImgObj.src = $(n).attr("src");
+            var width = $(".cont").width();
+            //没有图片，则返回-1
+            if (ImgObj.width > width) {
+                $(n).width(width);
+            }
+        });
+    });
+</script>
+<div style="display:none"></div><script>
+    var allA = document.getElementsByTagName('a');
+    for(var i=0;i<allA.length;i++){
+        if(allA[i].href.indexOf('tel')){
+            allA[i].href = allA[i].href + '#mp.weixin.qq.com';
+        }
+    }
+</script>
+</body>
+</html>
