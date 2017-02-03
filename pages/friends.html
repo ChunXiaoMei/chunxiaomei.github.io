@@ -14,6 +14,8 @@
 <script src="../javascripts/jquery.min.js"></script>
 </head>
 
+<body style=" background:#adacaa;">
+
 <!-- 多说评论框 start -->
 <div class="ds-thread"
 	 data-thread-key="亲友墙" data-title="亲友墙" data-url="https://chunxiaomei.github.io/pages/invite.html"></div>
@@ -26,12 +28,12 @@
         ds.type = 'text/javascript';ds.async = true;
         ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
-        (document.getElementById("MesLists")).appendChild(ds);
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
 <!-- 多说公共JS代码 end -->
 
-<body style=" background:#adacaa;">
 <header class="ui-header">
 <h1>亲友足迹</h1>
     <div class="ui-header-left"><a class="ui-header-ico-home" href="../index.html"></a></div>
