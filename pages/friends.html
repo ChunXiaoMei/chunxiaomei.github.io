@@ -26,13 +26,12 @@
         ds.type = 'text/javascript';ds.async = true;
         ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
+        (document.getElementsByTagName('MesLists')[0]).appendChild(ds);
     })();
 </script>
 <!-- 多说公共JS代码 end -->
 
-<body onload="init();" style=" background:#adacaa;">
+<body style=" background:#adacaa;">
 <header class="ui-header">
 <h1>亲友足迹</h1>
     <div class="ui-header-left"><a class="ui-header-ico-home" href="../index.html"></a></div>
@@ -46,23 +45,8 @@
     <div class="cont"><p class="MsoNormal" style="text-align:center;" align="center">
 	<br />
 </p>
-	<div class="friendDiv">
-		<div>
-			<label><span class="ccLike_font"><i class="fa fa-user">姓名:</i> </span></label>
-			<input style="background:transparent;border:1px solid #4c9b4c" id="name" name="name" placeholder="大名鼎鼎的你"></input>
-		</div>
-		<div>		
-  			<label><span class="ccLike_font"><i class="fa fa-comments-o"> 想要说的:</i></span>
-  			</label>
-			<textarea style="background:transparent;border:1px solid #4c9b4c" id="sampleTextarea" name="sampleTextarea" placeholder="祝福语..."></textarea>
-			
-        	<input id="SubmitContact" type="button" value="留言" onClick="performAjaxSubmit();"></input>
-  		</div>
-	</div>
-	
 	<div id="MesLists">
 	</div>
-	
 <p>
 	<br />
 </p>    </div>
