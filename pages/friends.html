@@ -15,25 +15,6 @@
 </head>
 
 <body style=" background:#adacaa;">
-
-<!-- 多说评论框 start -->
-<div class="ds-thread"
-	 data-thread-key="亲友墙" data-title="亲友墙" data-url="https://chunxiaomei.github.io/pages/invite.html"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    var duoshuoQuery = {short_name:"chunxiaomei"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-
 <header class="ui-header">
 <h1>亲友足迹</h1>
     <div class="ui-header-left"><a class="ui-header-ico-home" href="../index.html"></a></div>
@@ -71,13 +52,25 @@ $(n).width(width);
 });
 });
 </script>
-<div style="display:none"></div><script>
-       var allA = document.getElementsByTagName('a');
-			for(var i=0;i<allA.length;i++){
-				if(allA[i].href.indexOf('tel')){
-				  allA[i].href = allA[i].href;
-				}
-			}
-       </script>
-	  </body>
+<div style="display:none"></div>
+
+
+<!-- 多说评论框 start -->
+<div class="ds-thread"
+	 data-thread-key="亲友墙" data-title="亲友墙" data-url="https://chunxiaomei.github.io/pages/invite.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"chunxiaomei"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementById("MesLists")).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+</body>
 </html>
