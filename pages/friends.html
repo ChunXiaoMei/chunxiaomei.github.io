@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection">
+<title>亲友足迹</title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+<script src="../javascripts/zepto.min.js"></script>
+<script src="../javascripts/main.js"></script>
+<script src="../javascripts/tool.js"></script>
+<script src="../javascripts/jquery.min.js"></script>
+</head>
+
+<!-- 多说评论框 start -->
+<div class="ds-thread"
+	 data-thread-key="请将此处替换成你站点的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"chunxiaomei"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+<body onload="init();" style=" background:#adacaa;">
+<header class="ui-header">
+<h1>亲友足迹</h1>
+    <div class="ui-header-left"><a class="ui-header-ico-home" href="../index.html"></a></div>
+</header>
+
+<div class="catpic"><img src="../images/10.png" width="100%"></div>
+<div class="amain">
+<div class="filter"></div>
+    <h2 class="catname"><i class="fa fa-users"></i>亲友足迹</h2>
+    <h3 class="tle">亲友足迹墙^.^</h3>
+    <div class="cont"><p class="MsoNormal" style="text-align:center;" align="center">
+	<br />
+</p>
+	<div class="friendDiv">
+		<div>
+			<label><span class="ccLike_font"><i class="fa fa-user">姓名:</i> </span></label>
+			<input style="background:transparent;border:1px solid #4c9b4c" id="name" name="name" placeholder="大名鼎鼎的你"></input>
+		</div>
+		<div>		
+  			<label><span class="ccLike_font"><i class="fa fa-comments-o"> 想要说的:</i></span>
+  			</label>
+			<textarea style="background:transparent;border:1px solid #4c9b4c" id="sampleTextarea" name="sampleTextarea" placeholder="祝福语..."></textarea>
+			
+        	<input id="SubmitContact" type="button" value="留言" onClick="performAjaxSubmit();"></input>
+  		</div>
+	</div>
+	
+	<div id="MesLists">
+	</div>
+	
+<p>
+	<br />
+</p>    </div>
+</div>
+
+<footer>
+<div class="copy tc">张子良&畅晓春的结婚邀请函</div>
+</footer>
+<script>
+$(function() {
+var obj = new Image();
+$(".cont").find("img").each(function(i, n) {
+var ImgObj = new Image(); //判断图片是否存在
+ImgObj.src = $(n).attr("src");  
+var width = $(".cont").width();
+   //没有图片，则返回-1  
+if (ImgObj.width > width) {  
+$(n).width(width);
+} 
+});
+});
+</script>
+<div style="display:none"></div><script>
+       var allA = document.getElementsByTagName('a');
+			for(var i=0;i<allA.length;i++){
+				if(allA[i].href.indexOf('tel')){
+				  allA[i].href = allA[i].href;
+				}
+			}
+       </script>
+	  </body>
+</html>
